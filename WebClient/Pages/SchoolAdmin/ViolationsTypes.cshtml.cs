@@ -1,23 +1,24 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
-using System.Net.Http;
-using System.Threading.Tasks;
 using System.Collections.Generic;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 
 namespace WebClient.Pages.SchoolAdmin
 {
-    public class TeacherDashModel : PageModel
+    public class ViolationsTypesModel : PageModel
     {
         private readonly HttpClient _httpClient;
 
-        public TeacherDashModel(HttpClient httpClient)
+        public ViolationsTypesModel(HttpClient httpClient)
         {
             _httpClient = httpClient;
         }
 
-        public List<TeacherData> Teachers { get; set; } = new List<TeacherData>();
+        public List<ViolationTypeData> ViolationTypes { get; set; } = new List<ViolationTypeData>();
         public string ErrorMessage { get; set; }
 
         public async Task OnGetAsync()
@@ -33,22 +34,22 @@ namespace WebClient.Pages.SchoolAdmin
             }
 
             _httpClient.DefaultRequestHeaders.Authorization =
-                new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+                new AuthenticationHeaderValue("Bearer", token);
 
             try
             {
-                var response = await _httpClient.GetAsync("http://localhost:8001/api/teachers?sortOrder=asc");
+                var response = await _httpClient.GetAsync("http://localhost:8001/api/violation-types?sortOrder=asc");
                 if (response.IsSuccessStatusCode)
                 {
                     var jsonResponse = await response.Content.ReadAsStringAsync();
-                    var teacherResponse = JsonConvert.DeserializeObject<TeacherResponse>(jsonResponse);
-                    if (teacherResponse != null && teacherResponse.Success)
+                    var apiResponse = JsonConvert.DeserializeObject<ApiResponse>(jsonResponse);
+                    if (apiResponse != null && apiResponse.Success)
                     {
-                        Teachers = teacherResponse.Data ?? new List<TeacherData>();
+                        ViolationTypes = apiResponse.Data ?? new List<ViolationTypeData>();
                     }
                     else
                     {
-                        ErrorMessage = teacherResponse?.Message ?? "Failed to load data.";
+                        ErrorMessage = apiResponse?.Message ?? "Failed to load data.";
                     }
                 }
                 else
@@ -65,25 +66,22 @@ namespace WebClient.Pages.SchoolAdmin
                 ErrorMessage = $"JSON parsing error: {ex.Message}";
             }
         }
-    }
 
-    public class TeacherResponse
-    {
-        public List<TeacherData> Data { get; set; }
-        public bool Success { get; set; }
-        public string Message { get; set; }
-    }
+        public class ApiResponse
+        {
+            public List<ViolationTypeData> Data { get; set; }
+            public bool Success { get; set; }
+            public string Message { get; set; }
+        }
 
-    public class TeacherData
-    {
-        public int TeacherId { get; set; }
-        public string Code { get; set; }
-        public string TeacherName { get; set; }
-        public string SchoolName { get; set; }
-        public string Phone { get; set; }
-        public string Address { get; set; }
-        public string Status { get; set; }
-        public int RoleId { get; set; }
-        public bool Sex { get; set; }
+        public class ViolationTypeData
+        {
+            public int ViolationTypeId { get; set; }
+            public string VioTypeName { get; set; }
+            public int ViolationGroupId { get; set; }
+            public string VioGroupName { get; set; }
+            public string Description { get; set; }
+            public string Status { get; set; }
+        }
     }
 }

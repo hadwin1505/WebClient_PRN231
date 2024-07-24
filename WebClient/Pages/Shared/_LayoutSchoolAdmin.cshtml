@@ -65,6 +65,35 @@
                             </a>
                         </li>
                         <!-- Add more menu items here as needed -->
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" href="#" id="violationLink" data-bs-toggle="collapse" data-bs-target="#violationSubmenu" aria-expanded="false">
+                                Violation
+                            </a>
+                            <div class="collapse" id="violationSubmenu">
+                                <ul class="nav flex-column ms-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" id="violationsLink">
+                                            Violations
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" id="violationsConfigLink">
+                                            Violations Config
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" id="violationsTypesLink">
+                                            Violations Types
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" id="violationGroupLink">
+                                            Violation Group
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -127,7 +156,44 @@
                 e.preventDefault();
                 $('#main-content').load('/SchoolAdmin/SuperVisor', function (response, status, xhr) {
                     if (status == "error") {
-                        console.log("Error loading Teacher page: " + xhr.status + " " + xhr.statusText);
+                        console.log("Error loading SuperVisor page: " + xhr.status + " " + xhr.statusText);
+                    }
+                });
+            });
+
+            // Handle Violation submenu links click
+            $('#violationsLink').click(function (e) {
+                e.preventDefault();
+                $('#main-content').load('/SchoolAdmin/Violations', function (response, status, xhr) {
+                    if (status == "error") {
+                        console.log("Error loading Violations page: " + xhr.status + " " + xhr.statusText);
+                    }
+                });
+            });
+
+            $('#violationsConfigLink').click(function (e) {
+                e.preventDefault();
+                $('#main-content').load('/SchoolAdmin/ViolationsConfigs', function (response, status, xhr) {
+                    if (status == "error") {
+                        console.log("Error loading Violations Config page: " + xhr.status + " " + xhr.statusText);
+                    }
+                });
+            });
+
+            $('#violationsTypesLink').click(function (e) {
+                e.preventDefault();
+                $('#main-content').load('/SchoolAdmin/ViolationsTypes', function (response, status, xhr) {
+                    if (status == "error") {
+                        console.log("Error loading Violations Types page: " + xhr.status + " " + xhr.statusText);
+                    }
+                });
+            });
+
+            $('#violationGroupLink').click(function (e) {
+                e.preventDefault();
+                $('#main-content').load('/SchoolAdmin/ViolationGroup', function (response, status, xhr) {
+                    if (status == "error") {
+                        console.log("Error loading Violation Group page: " + xhr.status + " " + xhr.statusText);
                     }
                 });
             });

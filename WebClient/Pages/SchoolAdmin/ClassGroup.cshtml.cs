@@ -36,7 +36,7 @@ namespace WebClient.Pages.SchoolAdmin
 
             try
             {
-                var response = await _httpClient.GetAsync("https://localhost:7291/api/class-groups?sortOrder=asc");
+                var response = await _httpClient.GetAsync("http://localhost:8001/api/class-groups?sortOrder=asc");
                 if (response.IsSuccessStatusCode)
                 {
                     var jsonResponse = await response.Content.ReadAsStringAsync();
