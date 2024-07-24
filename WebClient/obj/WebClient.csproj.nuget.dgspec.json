@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Client\\WebClient_PRN231\\WebClient\\WebClient.csproj": {}
+    "D:\\Github\\WebClient_PRN231\\WebClient\\WebClient.csproj": {}
   },
   "projects": {
-    "D:\\Client\\WebClient_PRN231\\WebClient\\WebClient.csproj": {
+    "D:\\Github\\WebClient_PRN231\\WebClient\\WebClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Client\\WebClient_PRN231\\WebClient\\WebClient.csproj",
+        "projectUniqueName": "D:\\Github\\WebClient_PRN231\\WebClient\\WebClient.csproj",
         "projectName": "WebClient",
-        "projectPath": "D:\\Client\\WebClient_PRN231\\WebClient\\WebClient.csproj",
-        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "D:\\Client\\WebClient_PRN231\\WebClient\\obj\\",
+        "projectPath": "D:\\Github\\WebClient_PRN231\\WebClient\\WebClient.csproj",
+        "packagesPath": "C:\\Users\\CHINH\\.nuget\\packages\\",
+        "outputPath": "D:\\Github\\WebClient_PRN231\\WebClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CHINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -48,6 +53,10 @@
             "Microsoft.Extensions.Http": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.12, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
@@ -77,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

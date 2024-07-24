@@ -28,7 +28,7 @@ namespace WebClient.Pages
             }
 
 
-            var response = await _httpClient.PostAsJsonAsync("http://localhost:8001/api/auths/login", Login);
+            var response = await _httpClient.PostAsJsonAsync("https://localhost:7291/api/auths/login", Login);
 
             if (response.IsSuccessStatusCode)
             {
@@ -50,7 +50,7 @@ namespace WebClient.Pages
                     return Page();
                 }
 
-                var userResponse = await _httpClient.GetAsync($"http://localhost:8001/api/users/{userId}");
+                var userResponse = await _httpClient.GetAsync($"https://localhost:7291/api/users/{userId}");
                 if (userResponse.IsSuccessStatusCode)
                 {
 
@@ -79,6 +79,10 @@ namespace WebClient.Pages
                 else if (roleClaim == "SUPERVISOR")
                 {
                     return RedirectToPage("/SuperVisor/Index");
+                }
+                else if (roleClaim == "SCHOOL_ADMIN")
+                {
+                    return RedirectToPage("/SchoolAdmin/Index");
                 }
                 else if (roleClaim == "TEACHER")
                 {

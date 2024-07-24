@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebClient</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/supervisor.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebClient.styles.css" asp-append-version="true" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar navbar-light bg-white border-bottom fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#" id="reloadPage">
+                <img src="https://img.icons8.com/?size=100&id=hGzLo79r7KzD&format=png&color=000000" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+                Project PRN231
+            </a>
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="User" width="32" height="32" class="rounded-circle me-2">
+                    @ViewData["UserName"]
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end text-small shadow" aria-labelledby="userDropdown">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Update</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                        <form method="post" asp-page="/Logout" class="m-0">
+                            <button type="submit" class="dropdown-item">Logout</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="sidebar-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="classGroupLink">
+                                ClassGroup
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="studentInClassLink">
+                                Student In Class
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="schoolYearLink">
+                                SchoolYear
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="teacherLink">
+                                Teacher
+                            </a>
+                        </li>
+                        <!-- Add more menu items here as needed -->
+                    </ul>
+                </div>
+            </nav>
+            <main id="main-content" class="col-md-9 ms-sm-auto col-lg-10 px-4">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <script>
+        $(document).ready(function () {
+            // Highlight active menu item
+            $('.nav-link').on('click', function () {
+                $('.nav-link').removeClass('active');
+                $(this).addClass('active');
+            });
+
+            // Toggle sidebar on mobile
+            $('.navbar-toggler').on('click', function () {
+                $('#sidebarMenu').toggleClass('show');
+            });
+
+            // Handle ClassGroup link click
+            $('#classGroupLink').click(function (e) {
+                e.preventDefault();
+                $('#main-content').load('/SchoolAdmin/ClassGroup', function (response, status, xhr) {
+                    if (status == "error") {
+                        console.log("Error loading ClassGroup page: " + xhr.status + " " + xhr.statusText);
+                    }
+                });
+            });
+
+            // Handle Student In Class link click
+            $('#studentInClassLink').click(function (e) {
+                e.preventDefault();
+                $('#main-content').load('/SchoolAdmin/StudentInClass', function (response, status, xhr) {
+                    if (status == "error") {
+                        console.log("Error loading Student In Class page: " + xhr.status + " " + xhr.statusText);
+                    }
+                });
+            });
+
+            // Handle SchoolYear link click
+            $('#schoolYearLink').click(function (e) {
+                e.preventDefault();
+                $('#main-content').load('/SchoolAdmin/SchoolYear', function (response, status, xhr) {
+                    if (status == "error") {
+                        console.log("Error loading SchoolYear page: " + xhr.status + " " + xhr.statusText);
+                    }
+                });
+            });
+
+            // Handle Teacher link click
+            $('#teacherLink').click(function (e) {
+                e.preventDefault();
+                $('#main-content').load('/SchoolAdmin/Teacher', function (response, status, xhr) {
+                    if (status == "error") {
+                        console.log("Error loading Teacher page: " + xhr.status + " " + xhr.statusText);
+                    }
+                });
+            });
+
+            // Reload page on Project PRN231 click
+            $('#reloadPage').on('click', function () {
+                window.location.reload();
+            });
+        });
+    </script>
+</body>
+</html>
