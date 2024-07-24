@@ -1,22 +1,22 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Net.Http;
+using Newtonsoft.Json;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Collections.Generic;
-using Newtonsoft.Json;
 using Microsoft.AspNetCore.Http;
 
 namespace WebClient.Pages.SchoolAdmin
 {
-    public class SuperVisorModel : PageModel
+    public class ViolationGroupModel : PageModel
     {
         private readonly HttpClient _httpClient;
 
-        public SuperVisorModel(HttpClient httpClient)
+        public ViolationGroupModel(HttpClient httpClient)
         {
             _httpClient = httpClient;
         }
 
-        public List<SupervisorData> Supervisors { get; set; } = new List<SupervisorData>();
+        public List<ViolationGroupData> ViolationGroups { get; set; } = new List<ViolationGroupData>();
         public string ErrorMessage { get; set; }
 
         public async Task OnGetAsync()
@@ -32,22 +32,22 @@ namespace WebClient.Pages.SchoolAdmin
             }
 
             _httpClient.DefaultRequestHeaders.Authorization =
-                new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+                new AuthenticationHeaderValue("Bearer", token);
 
             try
             {
-                var response = await _httpClient.GetAsync("http://localhost:8001/api/student-supervisors?sortOrder=asc");
+                var response = await _httpClient.GetAsync("http://localhost:8001/api/violation-groups?sortOrder=asc");
                 if (response.IsSuccessStatusCode)
                 {
                     var jsonResponse = await response.Content.ReadAsStringAsync();
-                    var supervisorResponse = JsonConvert.DeserializeObject<SupervisorResponse>(jsonResponse);
-                    if (supervisorResponse != null && supervisorResponse.Success)
+                    var violationGroupResponse = JsonConvert.DeserializeObject<ApiResponse>(jsonResponse);
+                    if (violationGroupResponse != null && violationGroupResponse.Success)
                     {
-                        Supervisors = supervisorResponse.Data ?? new List<SupervisorData>();
+                        ViolationGroups = violationGroupResponse.Data ?? new List<ViolationGroupData>();
                     }
                     else
                     {
-                        ErrorMessage = supervisorResponse?.Message ?? "Failed to load data.";
+                        ErrorMessage = violationGroupResponse?.Message ?? "Failed to load data.";
                     }
                 }
                 else
@@ -64,27 +64,23 @@ namespace WebClient.Pages.SchoolAdmin
                 ErrorMessage = $"JSON parsing error: {ex.Message}";
             }
         }
-    }
 
-    public class SupervisorResponse
-    {
-        public List<SupervisorData> Data { get; set; }
-        public bool Success { get; set; }
-        public string Message { get; set; }
-    }
+        public class ApiResponse
+        {
+            public List<ViolationGroupData> Data { get; set; }
+            public bool Success { get; set; }
+            public string Message { get; set; }
+        }
 
-    public class SupervisorData
-    {
-        public int StudentSupervisorId { get; set; }
-        public int StudentInClassId { get; set; }
-        public bool IsSupervisor { get; set; }
-        public int SchoolId { get; set; }
-        public string Code { get; set; }
-        public string SupervisorName { get; set; }
-        public string Phone { get; set; }
-        public string Password { get; set; }
-        public string Address { get; set; }
-        public string Description { get; set; }
-        public int RoleId { get; set; }
+        public class ViolationGroupData
+        {
+            public int ViolationGroupId { get; set; }
+            public int SchoolId { get; set; }
+            public string SchoolName { get; set; }
+            public string VioGroupCode { get; set; }
+            public string VioGroupName { get; set; }
+            public string Description { get; set; }
+            public string Status { get; set; }
+        }
     }
 }
