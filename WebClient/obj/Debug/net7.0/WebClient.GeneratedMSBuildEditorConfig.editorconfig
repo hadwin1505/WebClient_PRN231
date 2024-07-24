@@ -50,6 +50,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2Nob29sQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Github/WebClient_PRN231/WebClient/Pages/SchoolAdmin/SchoolYear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2Nob29sQWRtaW5cU2Nob29sWWVhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/WebClient_PRN231/WebClient/Pages/SchoolAdmin/SuperVisor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2Nob29sQWRtaW5cU3VwZXJWaXNvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Github/WebClient_PRN231/WebClient/Pages/SchoolAdmin/TeacherDash.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2Nob29sQWRtaW5cVGVhY2hlckRhc2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Github/WebClient_PRN231/WebClient/Pages/Shared/_LayoutSchoolAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXRTY2hvb2xBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

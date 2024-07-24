@@ -1,5 +1,5 @@
 ﻿@page
-@model WebClient.Pages.SchoolAdmin.ClassGroupModel
+@model WebClient.Pages.SchoolAdmin.SuperVisorModel
 @{
     Layout = null;
 }
@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Class Groups Dashboard</title>
+    <title>Supervisors Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
@@ -73,46 +73,36 @@
                     background-color: #f8f9fa;
                 }
 
-        .status-active {
-            color: #28a745;
-            font-weight: bold;
-        }
-
-        .status-inactive {
-            color: #dc3545;
-            font-weight: bold;
-        }
-
         .action-buttons {
             display: flex;
-            justify-content: flex-start; /* Align buttons to the left */
-            gap: 5px; /* Adjust the spacing between buttons if needed */
+            justify-content: flex-start;
+            gap: 5px;
         }
 
             .action-buttons .btn {
                 border: none;
                 background: transparent;
-                padding: 0; /* Remove padding to align icons properly */
+                padding: 0;
             }
 
                 .action-buttons .btn i {
                     font-size: 1.2rem;
-                    color: #007bff; /* Default color for icons */
-                    vertical-align: middle; /* Align icons vertically with text */
+                    color: #007bff;
+                    vertical-align: middle;
                 }
 
                 .action-buttons .btn:hover i {
-                    color: #0056b3; /* Darker color for icons on hover */
+                    color: #0056b3;
                 }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Class Groups Dashboard</h1>
+        <h1>Supervisors Dashboard</h1>
 
-        @if (Model.ClassGroups.Count == 0)
+        @if (Model.Supervisors.Count == 0)
         {
-            <p>No class groups available.</p>
+            <p>No supervisors available.</p>
         }
         else
         {
@@ -120,26 +110,29 @@
                 <thead>
                     <tr>
                         <th style="width: 10%;">ID</th>
-                        <th style="width: 15%;">Hall</th>
-                        <th style="width: 15%;">Status</th>
-                        <th style="width: 20%;">Actions</th> <!-- Added Actions column -->
+                        <th style="width: 15%;">Supervisor Code</th>
+                        <th style="width: 20%;">Name</th>
+                        <th style="width: 25%;">Address</th>
+                        <th style="width: 25%;">Description</th>
+                        <th style="width: 10%;">Role</th>
+                        <th style="width: 10%;">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var group in Model.ClassGroups)
+                    @foreach (var supervisor in Model.Supervisors)
                     {
                         <tr>
-                            <td>@group.ClassGroupId</td>
-                            <td>@group.Hall</td>
-                            <td><span class="@Model.GetStatusClass(group.Status)">@group.Status</span></td>
+                            <td>@supervisor.StudentSupervisorId</td>
+                            <td>@supervisor.Code</td>
+                            <td>@supervisor.SupervisorName</td>
+                            <td>@supervisor.Address</td>
+                            <td>@supervisor.Description</td>
+                            <td>@(supervisor.RoleId == 6 ? "Supervisor" : "Unknown Role")</td>
                             <td class="action-buttons">
-                                <a href="/SchoolAdmin/ClassGroupDetails?id=@group.ClassGroupId" class="btn" title="View Details">
-                                    <i class="fas fa-eye"></i>
-                                </a>
-                                <a href="/SchoolAdmin/EditClassGroup?id=@group.ClassGroupId" class="btn" title="Edit">
+                                <a href="/SchoolAdmin/EditSupervisor?id=@supervisor.StudentSupervisorId" class="btn" title="Edit">
                                     <i class="fas fa-edit"></i>
                                 </a>
-                                <a href="/SchoolAdmin/DeleteClassGroup?id=@group.ClassGroupId" class="btn" title="Delete">
+                                <a href="/SchoolAdmin/DeleteSupervisor?id=@supervisor.StudentSupervisorId" class="btn" title="Delete">
                                     <i class="fas fa-trash"></i>
                                 </a>
                             </td>

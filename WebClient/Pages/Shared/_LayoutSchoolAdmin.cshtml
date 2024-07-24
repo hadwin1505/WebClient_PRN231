@@ -50,11 +50,6 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" id="studentInClassLink">
-                                Student In Class
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#" id="schoolYearLink">
                                 SchoolYear
                             </a>
@@ -62,6 +57,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#" id="teacherLink">
                                 Teacher
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="supervisorLink">
+                                SuperVisor
                             </a>
                         </li>
                         <!-- Add more menu items here as needed -->
@@ -116,7 +116,16 @@
             // Handle Teacher link click
             $('#teacherLink').click(function (e) {
                 e.preventDefault();
-                $('#main-content').load('/SchoolAdmin/Teacher', function (response, status, xhr) {
+                $('#main-content').load('/SchoolAdmin/TeacherDash', function (response, status, xhr) {
+                    if (status == "error") {
+                        console.log("Error loading Teacher page: " + xhr.status + " " + xhr.statusText);
+                    }
+                });
+            });
+
+            $('#supervisorLink').click(function (e) {
+                e.preventDefault();
+                $('#main-content').load('/SchoolAdmin/SuperVisor', function (response, status, xhr) {
                     if (status == "error") {
                         console.log("Error loading Teacher page: " + xhr.status + " " + xhr.statusText);
                     }
