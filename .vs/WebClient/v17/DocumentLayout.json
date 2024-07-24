@@ -3,48 +3,72 @@
   "WorkspaceRootPath": "D:\\Github\\WebClient_PRN231\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\teacher\\teachermain.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\teacher\\teachermain.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\shared\\_layoutschooladmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\shared\\_layoutschooladmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\schooladmin\\teacherdash.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\schooladmin\\teacherdash.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\schooladmin\\teacherdash.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\schooladmin\\teacherdash.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\schooladmin\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\schooladmin\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\schooladmin\\supervisor.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\schooladmin\\supervisor.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\teacher\\teachermain.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\teacher\\teachermain.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\schooladmin\\supervisor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\schooladmin\\supervisor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\schooladmin\\classgroup.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\schooladmin\\classgroup.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\schooladmin\\schoolyear.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\schooladmin\\schoolyear.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\schooladmin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\schooladmin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\schooladmin\\schoolyear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\schooladmin\\schoolyear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\schooladmin\\classgroup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\schooladmin\\classgroup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\schooladmin\\classgroup.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\schooladmin\\classgroup.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\schooladmin\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\schooladmin\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\teacher\\violationsteacher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\teacher\\violationsteacher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\teacher\\violationsteacher.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\teacher\\violationsteacher.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\shared\\_layoutschooladmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\shared\\_layoutschooladmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\teacher\\teachermain.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\teacher\\teachermain.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\teacher\\teachermain.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\teacher\\teachermain.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\teacher\\violationsteacher.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|solutionrelative:webclient\\pages\\teacher\\violationsteacher.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78986210-2715-4BAB-950F-7DA1C3714CED}|WebClient\\WebClient.csproj|d:\\github\\webclient_prn231\\webclient\\pages\\shared\\_layoutteacher.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -62,41 +86,119 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\Login.cshtml",
-              "RelativeDocumentMoniker": "WebClient\\Pages\\Login.cshtml",
-              "ToolTip": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\Login.cshtml",
-              "RelativeToolTip": "WebClient\\Pages\\Login.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABFAAAA",
+              "DocumentIndex": 3,
+              "Title": "SuperVisor.cshtml.cs",
+              "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\SuperVisor.cshtml.cs",
+              "RelativeDocumentMoniker": "WebClient\\Pages\\SchoolAdmin\\SuperVisor.cshtml.cs",
+              "ToolTip": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\SuperVisor.cshtml.cs",
+              "RelativeToolTip": "WebClient\\Pages\\SchoolAdmin\\SuperVisor.cshtml.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAswFoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T20:36:44.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SuperVisor.cshtml",
+              "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\SuperVisor.cshtml",
+              "RelativeDocumentMoniker": "WebClient\\Pages\\SchoolAdmin\\SuperVisor.cshtml",
+              "ToolTip": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\SuperVisor.cshtml",
+              "RelativeToolTip": "WebClient\\Pages\\SchoolAdmin\\SuperVisor.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAswJIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-24T18:52:22.326Z",
+              "WhenOpened": "2024-07-24T20:25:06.988Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\Login.cshtml.cs",
-              "RelativeDocumentMoniker": "WebClient\\Pages\\Login.cshtml.cs",
-              "ToolTip": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\Login.cshtml.cs",
-              "RelativeToolTip": "WebClient\\Pages\\Login.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "TeacherDash.cshtml.cs",
+              "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\TeacherDash.cshtml.cs",
+              "RelativeDocumentMoniker": "WebClient\\Pages\\SchoolAdmin\\TeacherDash.cshtml.cs",
+              "ToolTip": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\TeacherDash.cshtml.cs",
+              "RelativeToolTip": "WebClient\\Pages\\SchoolAdmin\\TeacherDash.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T18:52:15.673Z",
+              "WhenOpened": "2024-07-24T20:19:46.669Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "WebClient\\Pages\\SchoolAdmin\\Index.cshtml.cs",
-              "ToolTip": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\Index.cshtml.cs",
-              "RelativeToolTip": "WebClient\\Pages\\SchoolAdmin\\Index.cshtml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
+              "DocumentIndex": 1,
+              "Title": "TeacherDash.cshtml",
+              "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\TeacherDash.cshtml",
+              "RelativeDocumentMoniker": "WebClient\\Pages\\SchoolAdmin\\TeacherDash.cshtml",
+              "ToolTip": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\TeacherDash.cshtml",
+              "RelativeToolTip": "WebClient\\Pages\\SchoolAdmin\\TeacherDash.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T20:19:37.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SchoolYear.cshtml.cs",
+              "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\SchoolYear.cshtml.cs",
+              "RelativeDocumentMoniker": "WebClient\\Pages\\SchoolAdmin\\SchoolYear.cshtml.cs",
+              "ToolTip": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\SchoolYear.cshtml.cs",
+              "RelativeToolTip": "WebClient\\Pages\\SchoolAdmin\\SchoolYear.cshtml.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAqwFwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T18:44:25.462Z",
+              "WhenOpened": "2024-07-24T19:48:51.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SchoolYear.cshtml",
+              "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\SchoolYear.cshtml",
+              "RelativeDocumentMoniker": "WebClient\\Pages\\SchoolAdmin\\SchoolYear.cshtml",
+              "ToolTip": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\SchoolYear.cshtml",
+              "RelativeToolTip": "WebClient\\Pages\\SchoolAdmin\\SchoolYear.cshtml",
+              "ViewState": "AQIAABoAAAAAAAAAAAAowJ0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T19:42:22.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClassGroup.cshtml",
+              "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\ClassGroup.cshtml",
+              "RelativeDocumentMoniker": "WebClient\\Pages\\SchoolAdmin\\ClassGroup.cshtml",
+              "ToolTip": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\ClassGroup.cshtml",
+              "RelativeToolTip": "WebClient\\Pages\\SchoolAdmin\\ClassGroup.cshtml",
+              "ViewState": "AQIAAHYAAAAAAAAAAAAowJkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T18:43:19.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_LayoutSchoolAdmin.cshtml",
+              "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\Shared\\_LayoutSchoolAdmin.cshtml",
+              "RelativeDocumentMoniker": "WebClient\\Pages\\Shared\\_LayoutSchoolAdmin.cshtml",
+              "ToolTip": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\Shared\\_LayoutSchoolAdmin.cshtml",
+              "RelativeToolTip": "WebClient\\Pages\\Shared\\_LayoutSchoolAdmin.cshtml",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAowIkAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T18:38:00.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ClassGroup.cshtml.cs",
+              "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\ClassGroup.cshtml.cs",
+              "RelativeDocumentMoniker": "WebClient\\Pages\\SchoolAdmin\\ClassGroup.cshtml.cs",
+              "ToolTip": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\ClassGroup.cshtml.cs",
+              "RelativeToolTip": "WebClient\\Pages\\SchoolAdmin\\ClassGroup.cshtml.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwFwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T18:43:34.726Z",
               "EditorCaption": ""
             },
             {
@@ -114,46 +216,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ClassGroup.cshtml.cs",
-              "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\ClassGroup.cshtml.cs",
-              "RelativeDocumentMoniker": "WebClient\\Pages\\SchoolAdmin\\ClassGroup.cshtml.cs",
-              "ToolTip": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\ClassGroup.cshtml.cs",
-              "RelativeToolTip": "WebClient\\Pages\\SchoolAdmin\\ClassGroup.cshtml.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAFwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T18:43:34.726Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ClassGroup.cshtml",
-              "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\ClassGroup.cshtml",
-              "RelativeDocumentMoniker": "WebClient\\Pages\\SchoolAdmin\\ClassGroup.cshtml",
-              "ToolTip": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\ClassGroup.cshtml",
-              "RelativeToolTip": "WebClient\\Pages\\SchoolAdmin\\ClassGroup.cshtml",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAcwHcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-24T18:43:19.257Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "ViolationsTeacher.cshtml",
               "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\Teacher\\ViolationsTeacher.cshtml",
               "RelativeDocumentMoniker": "WebClient\\Pages\\Teacher\\ViolationsTeacher.cshtml",
               "ToolTip": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\Teacher\\ViolationsTeacher.cshtml",
               "RelativeToolTip": "WebClient\\Pages\\Teacher\\ViolationsTeacher.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-07-24T18:41:43.657Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "WebClient\\Pages\\Login.cshtml.cs",
+              "ToolTip": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\Login.cshtml.cs",
+              "RelativeToolTip": "WebClient\\Pages\\Login.cshtml.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAIwDQAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T18:52:15.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\Login.cshtml",
+              "RelativeDocumentMoniker": "WebClient\\Pages\\Login.cshtml",
+              "ToolTip": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\Login.cshtml",
+              "RelativeToolTip": "WebClient\\Pages\\Login.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABMAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-24T18:52:22.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "WebClient\\Pages\\SchoolAdmin\\Index.cshtml.cs",
+              "ToolTip": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\SchoolAdmin\\Index.cshtml.cs",
+              "RelativeToolTip": "WebClient\\Pages\\SchoolAdmin\\Index.cshtml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T18:44:25.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "TeacherMain.cshtml",
               "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\Teacher\\TeacherMain.cshtml",
               "RelativeDocumentMoniker": "WebClient\\Pages\\Teacher\\TeacherMain.cshtml",
@@ -166,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "ViolationsTeacher.cshtml.cs",
               "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\Teacher\\ViolationsTeacher.cshtml.cs",
               "RelativeDocumentMoniker": "WebClient\\Pages\\Teacher\\ViolationsTeacher.cshtml.cs",
@@ -174,12 +289,11 @@
               "RelativeToolTip": "WebClient\\Pages\\Teacher\\ViolationsTeacher.cshtml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAGEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T18:42:00.929Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-24T18:42:00.929Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "TeacherMain.cshtml.cs",
               "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\Teacher\\TeacherMain.cshtml.cs",
               "RelativeDocumentMoniker": "WebClient\\Pages\\Teacher\\TeacherMain.cshtml.cs",
@@ -187,25 +301,11 @@
               "RelativeToolTip": "WebClient\\Pages\\Teacher\\TeacherMain.cshtml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-24T18:40:15.703Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-24T18:40:15.703Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "_LayoutSchoolAdmin.cshtml",
-              "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\Shared\\_LayoutSchoolAdmin.cshtml",
-              "RelativeDocumentMoniker": "WebClient\\Pages\\Shared\\_LayoutSchoolAdmin.cshtml",
-              "ToolTip": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\Shared\\_LayoutSchoolAdmin.cshtml",
-              "RelativeToolTip": "WebClient\\Pages\\Shared\\_LayoutSchoolAdmin.cshtml",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAGcAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-24T18:38:00.592Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "_LayoutTeacher.cshtml",
               "DocumentMoniker": "D:\\Github\\WebClient_PRN231\\WebClient\\Pages\\Shared\\_LayoutTeacher.cshtml",
               "RelativeDocumentMoniker": "WebClient\\Pages\\Shared\\_LayoutTeacher.cshtml",
@@ -213,8 +313,7 @@
               "RelativeToolTip": "WebClient\\Pages\\Shared\\_LayoutTeacher.cshtml",
               "ViewState": "AQIAAD8AAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-07-24T18:36:04.854Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-24T18:36:04.854Z"
             }
           ]
         }
