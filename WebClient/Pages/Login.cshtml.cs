@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace WebClient.Pages
 {
@@ -24,14 +26,39 @@ namespace WebClient.Pages
                 return Page();
             }
 
-            var response = await _httpClient.PostAsJsonAsync("http://localhost:8001/api/auths/login", Login);
+            var response = await _httpClient.PostAsJsonAsync("https://localhost:7291/api/auths/login", Login);
 
             if (response.IsSuccessStatusCode)
             {
                 var result = await response.Content.ReadFromJsonAsync<LoginResponse>();
+
                 // Store the token (e.g., in session or local storage)
                 HttpContext.Session.SetString("JWToken", result.Token);
-                return RedirectToPage("/Index");
+
+                // Extract role from token
+                var tokenHandler = new JwtSecurityTokenHandler();
+                var token = tokenHandler.ReadJwtToken(result.Token);
+                var roleClaim = token.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
+
+                // Redirect based on role
+                if (roleClaim == "ADMIN")
+                {
+                    return RedirectToPage("/Admin/AdminMain");
+                }
+                else if (roleClaim == "SUPERVISOR")
+                {
+                    return RedirectToPage("/SuperVisor/SuperVisorMain");
+                }
+                else if (roleClaim == "TEACHER")
+                {
+                    return RedirectToPage("/Teacher/TeacherMain");
+                }
+                else
+                {
+                    // Handle unknown roles
+                    ErrorMessage = "Unknown role.";
+                    return Page();
+                }
             }
             else
             {
@@ -40,6 +67,7 @@ namespace WebClient.Pages
                 return Page();
             }
         }
+
     }
 
     public class LoginRequest
