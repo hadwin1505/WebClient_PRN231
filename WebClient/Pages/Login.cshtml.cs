@@ -80,6 +80,10 @@ namespace WebClient.Pages
                 {
                     return RedirectToPage("/SuperVisor/Index");
                 }
+                else if (roleClaim == "SCHOOL_ADMIN")
+                {
+                    return RedirectToPage("/SchoolAdmin/Index");
+                }
                 else if (roleClaim == "TEACHER")
                 {
                     return RedirectToPage("/Teacher/TeacherMain");
