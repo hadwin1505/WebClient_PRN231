@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "D:\\Client\\WebClient_PRN231\\WebClient\\wwwroot\\css\\supervisor.css",
+      "PackagePath": "staticwebassets\\css\\supervisor.css"
+    },
+    {
       "Id": "D:\\Client\\WebClient_PRN231\\WebClient\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
