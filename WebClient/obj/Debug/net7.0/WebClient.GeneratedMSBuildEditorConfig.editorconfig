@@ -9,55 +9,55 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebClient
 build_property.RootNamespace = WebClient
-build_property.ProjectDir = D:\Github\WebClient_PRN231\WebClient\
+build_property.ProjectDir = D:\Client\WebClient_PRN231\WebClient\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Github\WebClient_PRN231\WebClient
+build_property.MSBuildProjectDirectory = D:\Client\WebClient_PRN231\WebClient
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Github/WebClient_PRN231/WebClient/Pages/Admin/AdminMain.cshtml]
+[D:/Client/WebClient_PRN231/WebClient/Pages/Admin/AdminMain.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWRtaW5NYWluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Github/WebClient_PRN231/WebClient/Pages/Error.cshtml]
+[D:/Client/WebClient_PRN231/WebClient/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Github/WebClient_PRN231/WebClient/Pages/Index.cshtml]
+[D:/Client/WebClient_PRN231/WebClient/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Github/WebClient_PRN231/WebClient/Pages/Login.cshtml]
+[D:/Client/WebClient_PRN231/WebClient/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Github/WebClient_PRN231/WebClient/Pages/Privacy.cshtml]
+[D:/Client/WebClient_PRN231/WebClient/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Github/WebClient_PRN231/WebClient/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Client/WebClient_PRN231/WebClient/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Github/WebClient_PRN231/WebClient/Pages/SuperVisor/SuperVisorMain.cshtml]
+[D:/Client/WebClient_PRN231/WebClient/Pages/SuperVisor/SuperVisorMain.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwZXJWaXNvclxTdXBlclZpc29yTWFpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Github/WebClient_PRN231/WebClient/Pages/Teacher/TeacherMain.cshtml]
+[D:/Client/WebClient_PRN231/WebClient/Pages/Teacher/TeacherMain.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclxUZWFjaGVyTWFpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Github/WebClient_PRN231/WebClient/Pages/_ViewImports.cshtml]
+[D:/Client/WebClient_PRN231/WebClient/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Github/WebClient_PRN231/WebClient/Pages/_ViewStart.cshtml]
+[D:/Client/WebClient_PRN231/WebClient/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Github/WebClient_PRN231/WebClient/Pages/Shared/_Layout.cshtml]
+[D:/Client/WebClient_PRN231/WebClient/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-fxb6eae6jp

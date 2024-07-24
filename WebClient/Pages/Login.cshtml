@@ -2,28 +2,72 @@
 @model WebClient.Pages.LoginModel
 @{
     ViewData["Title"] = "Login";
-    Layout = "_Layout";
+    Layout = null;
 }
 
-<h2>Login</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
 
-<form method="post">
-    <div class="form-group">
-        <label asp-for="Login.Phone"></label>
-        <input asp-for="Login.Phone" class="form-control" />
-        <span asp-validation-for="Login.Phone" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Login.Password"></label>
-        <input asp-for="Login.Password" class="form-control" type="password" />
-        <span asp-validation-for="Login.Password" class="text-danger"></span>
-    </div>
-    <button type="submit" class="btn btn-primary">Login</button>
-</form>
+        .login-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
 
-@if (Model.ErrorMessage != null)
-{
-    <div class="alert alert-danger" role="alert">
-        @Model.ErrorMessage
+            .login-container h2 {
+                text-align: center; /* Căn giữa chữ "Login" */
+                margin-bottom: 1.5rem;
+            }
+
+        .alert {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="Login.Phone"></label>
+                <input asp-for="Login.Phone" class="form-control" />
+                <span asp-validation-for="Login.Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Login.Password"></label>
+                <input asp-for="Login.Password" class="form-control" type="password" />
+                <span asp-validation-for="Login.Password" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+
+        @if (Model.ErrorMessage != null)
+        {
+            <div class="alert alert-danger" role="alert">
+                @Model.ErrorMessage
+            </div>
+        }
     </div>
-}
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
