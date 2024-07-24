@@ -1,0 +1,149 @@
+﻿@page
+@model WebClient.Pages.SuperVisor.ViolationDetailsModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violation Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .details-table th,
+        .details-table td {
+            padding: 12px;
+        }
+
+        .details-table th {
+            background-color: #f8f9fa;
+            border-bottom: 2px solid #dee2e6;
+            font-weight: bold;
+            color: #495057;
+        }
+
+        .details-table tr {
+            background-color: #ffffff;
+        }
+
+            .details-table tr:hover {
+                background-color: #f8f9fa;
+            }
+
+        .status-approved {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .status-pending {
+            color: #ffc107;
+            font-weight: bold;
+        }
+
+        .status-rejected {
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        .violation-type {
+            color: #17a2b8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Violation Details</h1>
+
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <div class="alert alert-danger">
+                @Model.ErrorMessage
+            </div>
+        }
+
+        @if (Model.Violation != null)
+        {
+            <table class="table details-table">
+                <tbody>
+                    <tr>
+                        <th>ID</th>
+                        <td>@Model.Violation.ViolationId</td>
+                    </tr>
+                    <tr>
+                        <th>Student Name</th>
+                        <td>@Model.Violation.StudentName</td>
+                    </tr>
+                    <tr>
+                        <th>Violation Name</th>
+                        <td>@Model.Violation.ViolationName</td>
+                    </tr>
+                    <tr>
+                        <th>Date</th>
+                        <td>@Model.Violation.Date.ToShortDateString()</td>
+                    </tr>
+                    <tr>
+                        <th>Class</th>
+                        <td>@Model.Violation.ClassId</td>
+                    </tr>
+                    <tr>
+                        <th>Group</th>
+                        <td>@Model.Violation.ViolationGroupName</td>
+                    </tr>
+                    <tr>
+                        <th>Status</th>
+                        <td>
+                            @if (Model.Violation.Status == "APPROVED")
+                            {
+                                <span class="status-approved">Approved</span>
+                            }
+                            else if (Model.Violation.Status == "PENDING")
+                            {
+                                <span class="status-pending">Pending</span>
+                            }
+                            else if (Model.Violation.Status == "REJECTED")
+                            {
+                                <span class="status-rejected">Rejected</span>
+                            }
+                            else
+                            {
+                                <span>Unknown</span>
+                            }
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Type</th>
+                        <td><span class="violation-type">@Model.Violation.ViolationTypeName</span></td>
+                    </tr>
+                    <tr>
+                        <th>Description</th>
+                        <td>@Model.Violation.Description</td>
+                    </tr>
+                </tbody>
+            </table>
+        }
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

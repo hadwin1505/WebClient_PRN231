@@ -9,6 +9,26 @@
     <link rel="stylesheet" href="~/css/supervisor.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebClient.styles.css" asp-append-version="true" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        .user-dropdown {
+            position: relative;
+        }
+
+            .user-dropdown .dropdown-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                right: 0; /* Điều chỉnh giá trị này để làm menu gần hơn hình ảnh */
+                margin-top: 0.5rem;
+                z-index: 1000;
+                /* Điều chỉnh khoảng cách từ menu đến cạnh phải của hình ảnh */
+                padding: 0.5rem 1rem; /* Điều chỉnh padding nếu cần */
+            }
+
+            .user-dropdown:hover .dropdown-menu {
+                display: block;
+            }
+    </style>
 </head>
 <body>
     <header class="navbar navbar-light bg-white border-bottom fixed-top">
@@ -20,8 +40,8 @@
             <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="dropdown">
-                <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="dropdown user-dropdown">
+                <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="userDropdown" aria-expanded="false">
                     <img src="https://github.com/mdo.png" alt="User" width="32" height="32" class="rounded-circle me-2">
                     @ViewData["UserName"]
                 </a>
@@ -34,7 +54,6 @@
                             <button type="submit" class="dropdown-item">Logout</button>
                         </form>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -93,7 +112,6 @@
             $('#reloadPage').on('click', function () {
                 window.location.reload();
             });
-
         });
     </script>
 </body>

@@ -142,3 +142,4 @@ D:\Client\WebClient_PRN231\WebClient\obj\Debug\net7.0\refint\WebClient.dll
 D:\Client\WebClient_PRN231\WebClient\obj\Debug\net7.0\WebClient.pdb
 D:\Client\WebClient_PRN231\WebClient\obj\Debug\net7.0\WebClient.genruntimeconfig.cache
 D:\Client\WebClient_PRN231\WebClient\obj\Debug\net7.0\ref\WebClient.dll
+D:\Client\WebClient_PRN231\WebClient\bin\Debug\net7.0\Newtonsoft.Json.dll
