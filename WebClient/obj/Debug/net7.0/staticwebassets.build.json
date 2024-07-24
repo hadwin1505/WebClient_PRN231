@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9sVtVXIw00kRrhlj5/xVxdqfkmGHvaZltSR5pt3UEu4=",
+  "Hash": "doG2ZssDnMERT4lTSEsd2ZdYrWiHjZ7yXjC8nmqnNuA=",
   "Source": "WebClient",
   "BasePath": "_content/WebClient",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "D:\\Client\\WebClient_PRN231\\WebClient\\wwwroot\\css\\supervisor.css",
+      "SourceId": "WebClient",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Client\\WebClient_PRN231\\WebClient\\wwwroot\\",
+      "BasePath": "_content/WebClient",
+      "RelativePath": "css/supervisor.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\supervisor.css"
     },
     {
       "Identity": "D:\\Client\\WebClient_PRN231\\WebClient\\wwwroot\\favicon.ico",

@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Client/WebClient_PRN231/WebClient/Pages/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Client/WebClient_PRN231/WebClient/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -42,8 +46,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Client/WebClient_PRN231/WebClient/Pages/SuperVisor/SuperVisorMain.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwZXJWaXNvclxTdXBlclZpc29yTWFpbi5jc2h0bWw=
+[D:/Client/WebClient_PRN231/WebClient/Pages/SuperVisor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwZXJWaXNvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Client/WebClient_PRN231/WebClient/Pages/SuperVisor/ViolationsDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwZXJWaXNvclxWaW9sYXRpb25zRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Client/WebClient_PRN231/WebClient/Pages/Teacher/TeacherMain.cshtml]

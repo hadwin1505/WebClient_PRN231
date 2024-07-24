@@ -1,9 +1,19 @@
+using WebClient;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddHttpClient(); // Add this line to configure HttpClient
-builder.Services.AddSession(); // Add session services
+builder.Services.AddHttpClient();
+
+// Configure session
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
 var app = builder.Build();
 
@@ -20,7 +30,9 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
-app.UseSession(); // Use session middleware
+
+// Use session
+app.UseSession();
 
 app.MapRazorPages();
 

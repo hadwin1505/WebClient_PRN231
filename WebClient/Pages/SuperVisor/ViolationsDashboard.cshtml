@@ -1,0 +1,170 @@
+﻿@page
+@model WebClient.Pages.SuperVisor.ViolationsDashboardModel
+@{
+    Layout = null; // Nếu sử dụng layout chính, thay đổi theo nhu cầu
+}
+<h1>Violations Dashboard</h1>
+
+<div class="container">
+    <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#createModal">Add Violation</button>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Description</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var violation in Model.Violations)
+            {
+                <tr>
+                    <td>@violation.Id</td>
+                    <td>@violation.Description</td>
+                    <td>@violation.Date.ToShortDateString()</td>
+                    <td>
+                        <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editModal" data-id="@violation.Id">Edit</button>
+                        <button class="btn btn-danger btn-sm" data-id="@violation.Id">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Create Modal -->
+<div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="createModalLabel">Add Violation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="createForm">
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description</label>
+                        <input type="text" class="form-control" id="description" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="date" class="form-label">Date</label>
+                        <input type="date" class="form-control" id="date" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Edit Violation</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="editForm">
+                    <input type="hidden" id="editId">
+                    <div class="mb-3">
+                        <label for="editDescription" class="form-label">Description</label>
+                        <input type="text" class="form-control" id="editDescription" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="editDate" class="form-label">Date</label>
+                        <input type="date" class="form-control" id="editDate" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript for CRUD operations -->
+<script>
+    $(document).ready(function () {
+        // Handle create form submission
+        $('#createForm').on('submit', function (e) {
+            e.preventDefault();
+            const description = $('#description').val();
+            const date = $('#date').val();
+
+            $.ajax({
+                url: '/api/violations',
+                type: 'POST',
+                data: JSON.stringify({ description, date }),
+                contentType: 'application/json',
+                success: function () {
+                    $('#createModal').modal('hide');
+                    $('#violationsLink').click(); // Reload content
+                },
+                error: function (error) {
+                    console.log('Error creating violation:', error);
+                }
+            });
+        });
+
+        // Handle edit button click
+        $('#editModal').on('show.bs.modal', function (e) {
+            const button = $(e.relatedTarget);
+            const id = button.data('id');
+            $('#editId').val(id);
+
+            // Fetch violation details for editing
+            $.ajax({
+                url: '/api/violations/' + id,
+                type: 'GET',
+                success: function (violation) {
+                    $('#editDescription').val(violation.description);
+                    $('#editDate').val(violation.date);
+                },
+                error: function (error) {
+                    console.log('Error fetching violation details:', error);
+                }
+            });
+        });
+
+        // Handle edit form submission
+        $('#editForm').on('submit', function (e) {
+            e.preventDefault();
+            const id = $('#editId').val();
+            const description = $('#editDescription').val();
+            const date = $('#editDate').val();
+
+            $.ajax({
+                url: '/api/violations/' + id,
+                type: 'PUT',
+                data: JSON.stringify({ description, date }),
+                contentType: 'application/json',
+                success: function () {
+                    $('#editModal').modal('hide');
+                    $('#violationsLink').click(); // Reload content
+                },
+                error: function (error) {
+                    console.log('Error updating violation:', error);
+                }
+            });
+        });
+
+        // Handle delete button click
+        $('.btn-danger').on('click', function () {
+            const id = $(this).data('id');
+
+            $.ajax({
+                url: '/api/violations/' + id,
+                type: 'DELETE',
+                success: function () {
+                    $('#violationsLink').click(); // Reload content
+                },
+                error: function (error) {
+                    console.log('Error deleting violation:', error);
+                }
+            });
+        });
+    });
+</script>
