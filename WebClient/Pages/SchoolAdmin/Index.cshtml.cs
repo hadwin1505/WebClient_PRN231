@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace WebClient.Pages.Teacher
+namespace WebClient.Pages.SchoolAdmin
 {
-    public class TeacherMainModel : PageModel
+    public class IndexModel : PageModel
     {
         public string UserName { get; private set; }
 

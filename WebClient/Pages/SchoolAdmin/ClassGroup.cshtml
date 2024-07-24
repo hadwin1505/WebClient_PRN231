@@ -1,0 +1,119 @@
+﻿@page
+@model WebClient.Pages.SchoolAdmin.ClassGroupModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Groups Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .table {
+            border-collapse: separate;
+            border-spacing: 0 8px;
+            width: 100%;
+        }
+
+            .table th,
+            .table td {
+                border: 1px solid #dee2e6;
+                border-style: solid none;
+                padding: 12px;
+                vertical-align: middle;
+            }
+
+                .table th:first-child,
+                .table td:first-child {
+                    border-left-style: solid;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                }
+
+                .table th:last-child,
+                .table td:last-child {
+                    border-right-style: solid;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+
+            .table th {
+                background-color: #f8f9fa;
+                border-bottom: 2px solid #dee2e6;
+                font-weight: bold;
+                color: #495057;
+            }
+
+            .table tr {
+                background-color: #ffffff;
+            }
+
+                .table tr:hover {
+                    background-color: #f8f9fa;
+                }
+
+        .status-active {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .status-inactive {
+            color: #dc3545;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Class Groups Dashboard</h1>
+
+        @if (Model.ClassGroups.Count == 0)
+        {
+            <p>No class groups available.</p>
+        }
+        else
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th style="width: 10%;">ID</th>
+                        <th style="width: 15%;">Hall</th>
+                        <th style="width: 15%;">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var group in Model.ClassGroups)
+                    {
+                        <tr>
+                            <td>@group.ClassGroupId</td>
+                            <td>@group.Hall</td>
+                            <td><span class="@Model.GetStatusClass(group.Status)">@group.Status</span></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</body>
+</html>
